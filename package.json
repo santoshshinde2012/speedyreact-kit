@@ -1,0 +1,10 @@
+{
+  "name": "speedyreact-kit",
+  "version": "1.0.0",
+  "description": "React Typescript Boilerplate With ESBuilder",
+  "main": "src/index.tsx",
+  "repository": "https://github.com/santoshshinde2012/speedyreact-kit.git",
+  "author": "Santosh Shinde <santoshshinde2012@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
