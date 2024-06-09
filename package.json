@@ -1,10 +1,33 @@
 {
   "name": "speedyreact-kit",
-  "version": "1.0.0",
-  "description": "React Typescript Boilerplate With ESBuilder",
-  "main": "src/index.tsx",
-  "repository": "https://github.com/santoshshinde2012/speedyreact-kit.git",
-  "author": "Santosh Shinde <santoshshinde2012@gmail.com>",
-  "license": "MIT",
-  "private": false
+  "packageManager": "yarn@4.2.2",
+  "scripts": {
+    "build": "node script/build.mjs",
+    "build-analyze": "node script/build.mjs --analyze=true",
+    "dev": "node script/serve.mjs",
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss}\""
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.21.4",
+    "esbuild-plugin-svg": "^0.1.0",
+    "eslint": "^9.4.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
+  }
 }
