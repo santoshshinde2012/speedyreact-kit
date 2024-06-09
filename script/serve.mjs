@@ -1,13 +1,13 @@
-import esbuild from 'esbuild';
-import { copyFolder } from './common/file.mjs';
-import { sharedEsbuildConfig, outdir, publicdir } from './common/config.mjs';
+import esbuild from "esbuild";
+import { copyFolder } from "./common/file.mjs";
+import { sharedEsbuildConfig, outdir, publicdir } from "./common/config.mjs";
 
 const esbuildConfig = {
   ...sharedEsbuildConfig,
-  entryNames: 'bundle',
+  entryNames: "bundle",
   minify: false,
   sourcemap: true,
-  logLevel: 'info',
+  logLevel: "info",
 };
 
 async function buildAndServe() {
@@ -18,11 +18,10 @@ async function buildAndServe() {
     await context.serve({
       port: 3000,
       servedir: outdir,
-      fallback: `${outdir}/index.html`
+      fallback: `${outdir}/index.html`,
     });
-
   } catch (error) {
-    console.error('An error occurred during the build process:', error);
+    console.error("An error occurred during the build process:", error);
   }
 }
 

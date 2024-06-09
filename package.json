@@ -7,7 +7,7 @@
     "dev": "node script/serve.mjs",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
-    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss}\" \"script/**/*.{js,mjs,ts,tsx,json,css,scss}\""
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -25,6 +25,7 @@
     "esbuild-plugin-svg": "^0.1.0",
     "eslint": "^9.4.0",
     "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.4.0",
     "prettier": "^3.3.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
