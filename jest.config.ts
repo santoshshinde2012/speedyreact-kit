@@ -93,8 +93,8 @@ const config: Config = {
   moduleNameMapper: {
     // mocking assests and styling
   '^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-    '<rootDir>/tests/mock/file.ts',
-  '^.+\\.(css|less|scss|sass)$': '<rootDir>/tests/mock/style.ts'
+    '<rootDir>/mock/file.ts',
+  '^.+\\.(css|less|scss|sass)$': '<rootDir>/mock/style.ts'
 },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

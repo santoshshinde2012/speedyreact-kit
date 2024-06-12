@@ -15,10 +15,23 @@
 
 ## Project Structure
 
+- `src`
+- `public`
+- `script`
+- `mock`
+- `package.json`
+- `types.d.ts`
+- `jest.config.ts`
+- `eslint.config.mjs`
+
 ## Wiki
 
+- [FAQ](wiki/faq.md)
+  
 ## Refrences
 
+ - [A Comprehensive Guide to Setting Up ESLint, Jest, and Prettier in Node TypeScript](https://blog.santoshshinde.com/a-comprehensive-guide-to-setting-up-eslint-jest-and-prettier-in-node-typescript-b04d8e5673fd)
+ 
 <hr/>
 
 ### Connect with me on
