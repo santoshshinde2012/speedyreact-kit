@@ -1,6 +1,7 @@
 {
   "name": "speedyreact-kit",
   "packageManager": "yarn@4.2.2",
+  "homepage": "https://santoshshinde2012.github.io/speedyreact-kit",
   "scripts": {
     "build": "node script/build.mjs",
     "build-analyze": "node script/build.mjs --analyze=true",
