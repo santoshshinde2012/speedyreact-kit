@@ -2,7 +2,6 @@
 
 - The React Redux Esbuild Jest Starter is a modern, efficient boilerplate designed to kickstart your React projects with powerful tools and best practices. This template integrates React, Redux Toolkit, Esbuild, and Jest, ensuring optimal performance and a smooth development experience.
 
-
 ## Common Feature
 
 - Redux Toolkit: Integrated with Redux Toolkit for efficient state management.
