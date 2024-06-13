@@ -41,9 +41,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          cd build
           git init
-          git add -A
-          git commit -m "deploy"
+          git add .
+          git commit -m "Deploy to GitHub Pages"
           git push --force "https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git" main:gh-pages
 
     env:
