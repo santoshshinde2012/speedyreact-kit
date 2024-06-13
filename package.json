@@ -11,7 +11,7 @@
     "prepare": "husky || true",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css,scss}\" \"script/**/*.{js,mjs,ts,tsx,json,css,scss}\"",
     "precommit": "yarn lint-fix && yarn format",
-    "prepush": "npm run lint"
+    "prepush": "yarn run lint"
   },
   "dependencies": {
     "react": "^18.3.1",
