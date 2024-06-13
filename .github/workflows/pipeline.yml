@@ -27,9 +27,12 @@ jobs:
         uses: threeal/setup-yarn-action@v2.0.0
         with:
           version: latest
-          
+
       - name: Install dependencies
         run: yarn install
+
+      - name: Test
+        run: yarn test
 
       - name: Build the React app
         run: yarn build
@@ -47,7 +50,6 @@ jobs:
             -Dsonar.sources=src
             -Dsonar.inclusions=src/**/*.{ts,tsx}
             -Dsonar.tests=src/**/*test.tsx
-            -Dsonar.coverage.exclusions=src/**/*test.tsx,.yarn/*, node_modules/*,coverage/lcov-report/*,jest.config.ts,setupTests.ts
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info 
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.verbose=false
