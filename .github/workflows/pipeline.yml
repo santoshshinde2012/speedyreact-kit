@@ -37,26 +37,6 @@ jobs:
       - name: Build the React app
         run: yarn build
         
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        with: 
-          args: >
-            -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.organization=santoshshinde2012
-            -Dsonar.projectKey=santoshshinde2012_speedyreact-kit
-            -Dsonar.projectName=speedyreact-kit
-            -Dsonar.projectVersion=1.0
-            -Dsonar.language=ts
-            -Dsonar.sources=src
-            -Dsonar.inclusions=src/**/*.{ts,tsx}
-            -Dsonar.tests=src/**/*test.tsx
-            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info 
-            -Dsonar.sourceEncoding=UTF-8
-            -Dsonar.verbose=false
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name 'github-actions[bot]'
