@@ -25,7 +25,7 @@ const sharedEsbuildConfig = {
   format: "esm",
 
   // Public path
-  publicPath: "/",
+  // publicPath: "/",
 
   // Loaders for different file types
   loader: {
