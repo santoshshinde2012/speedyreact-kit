@@ -1,8 +1,9 @@
 {
   "name": "speedyreact-kit",
   "packageManager": "yarn@4.2.2",
-  "homepage": "https://santoshshinde2012.github.io/speedyreact-kit",
+  "homepage": "https://santoshshinde2012.github.io/speedyreact-kit/",
   "scripts": {
+    "serve": "serve dist/.",
     "build": "node script/build.mjs",
     "build-analyze": "node script/build.mjs --analyze=true",
     "dev": "node script/serve.mjs",
@@ -40,6 +41,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.3.1",
+    "serve": "^14.2.3",
     "ts-jest": "^29.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5",
