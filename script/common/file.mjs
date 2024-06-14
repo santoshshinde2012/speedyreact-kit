@@ -30,7 +30,7 @@ const copyFolder = async (source, destination, ignore = []) => {
   }
 };
 
-const updateIndexHtml = (source, outputs) => {
+const updateIndexHtml = async (source, outputs) => {
   const indexPath = path.resolve(source);
   let indexHtml = file.readFileSync(indexPath, "utf8");
   const [cssFile, jsFile] = Object.keys(outputs).reduce(
@@ -58,7 +58,9 @@ const updateIndexHtml = (source, outputs) => {
 
 async function deleteFolder(directoryPath) {
   try {
-    await fs.rm(directoryPath, { recursive: true });
+    if (file.existsSync(directoryPath)) {
+      await fs.rm(directoryPath, { recursive: true, force: true });
+    }
   } catch (error) {
     console.error(`Error deleting folder: ${error}`);
   }

@@ -1,5 +1,5 @@
 import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
-import svgPlugin from "esbuild-plugin-svg";
+import svgPlugin from "esbuild-plugin-svgr";
 
 const outdir = "./dist";
 const publicdir = "./public";
