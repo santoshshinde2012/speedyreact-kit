@@ -1,4 +1,10 @@
-import file, { promises as fs } from "fs";
+import {
+  promises as fs,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  writeFileSync,
+} from "fs";
 import path, { join } from "path";
 
 const copyFolder = async (source, destination, ignore = []) => {
@@ -32,7 +38,7 @@ const copyFolder = async (source, destination, ignore = []) => {
 
 const updateIndexHtml = async (source, outputs) => {
   const indexPath = path.resolve(source);
-  let indexHtml = file.readFileSync(indexPath, "utf8");
+  let indexHtml = readFileSync(indexPath, "utf8");
   const [cssFile, jsFile] = Object.keys(outputs).reduce(
     (files, filename) => {
       if (filename.endsWith(".js")) files[1] = path.basename(filename);
@@ -53,12 +59,12 @@ const updateIndexHtml = async (source, outputs) => {
   );
 
   // Write the updated index.html file
-  file.writeFileSync(indexPath, indexHtml, "utf8");
+  writeFileSync(indexPath, indexHtml, "utf8");
 };
 
 async function deleteFolder(directoryPath) {
   try {
-    if (file.existsSync(directoryPath)) {
+    if (existsSync(directoryPath)) {
       await fs.rm(directoryPath, { recursive: true, force: true });
     }
   } catch (error) {
@@ -67,8 +73,8 @@ async function deleteFolder(directoryPath) {
 }
 
 function createDirectoryIfNotExist(directoryPath) {
-  if (!file.existsSync(directoryPath)) {
-    file.mkdirSync(directoryPath, { recursive: true });
+  if (!existsSync(directoryPath)) {
+    mkdirSync(directoryPath, { recursive: true });
   }
 }
 

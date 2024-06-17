@@ -1,5 +1,6 @@
 import { pnpPlugin } from "@yarnpkg/esbuild-plugin-pnp";
 import svgPlugin from "esbuild-plugin-svgr";
+import envPlugin from "../plugin/env-plugin.mjs";
 
 const outdir = "./dist";
 const publicdir = "./public";
@@ -42,7 +43,7 @@ const sharedEsbuildConfig = {
   // Output directory
   outdir,
 
-  plugins: [pnpPlugin(), svgPlugin()],
+  plugins: [envPlugin({}), pnpPlugin(), svgPlugin()],
 };
 
 export { sharedEsbuildConfig, outdir, publicdir, analyzerdir };
