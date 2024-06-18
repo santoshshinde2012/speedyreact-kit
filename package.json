@@ -4,9 +4,11 @@
   "homepage": "https://santoshshinde2012.github.io/speedyreact-kit/",
   "scripts": {
     "serve": "serve dist/.",
-    "build": "node script/build.mjs",
-    "build-analyze": "node script/build.mjs --analyze=true",
     "dev": "node script/serve.mjs",
+    "build": "NODE_ENV=production node script/build.mjs",
+    "build-dev": "NODE_ENV=development node script/build.mjs",
+    "build-test": "NODE_ENV=test node script/build.mjs --analyze=true",
+    "serve-test": "NODE_ENV=test node script/serve.mjs",
     "lint": "eslint .",
     "lint-fix": "eslint --fix .",
     "test": "jest",
