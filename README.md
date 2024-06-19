@@ -6,8 +6,37 @@
 
 - [esbuild]
   
+## Setup
 
+### Prerequisite 
+- [Install Yarn Globally](https://classic.yarnpkg.com/lang/en/docs/install/)
+- Yarn PnP and ESBuild 
+    - [Make sure to enable corepack (Open CMD as admin)](https://yarnpkg.com/corepack)
+        - `corepack enable`
+    - [To allow yarn command in VS code make sure to use `Set-ExecutionPolicy Unrestricted` (Open Powershell as admin)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.4)
+- Setup Yarn PnP in vs code
+    - Install the [ZipFS](https://marketplace.visualstudio.com/items?itemName=arcanis.vscode-zipfs) extension, which is maintained by the Yarn team.
+    - Run command on terminal `yarn dlx @yarnpkg/sdks vscode`
 
+### Project Setup
+
+- Clone the project 
+    - `git clone https://github.com/santoshshinde2012/speedyreact-kit.git`
+- Set the Yarn Version (Make sure to do `corepack enable`)
+    - `yarn set version berry`
+- Install Modules locally using Yarn
+    - `yarn install`
+    - Make sure to create env variables `.env.development`
+
+## Run Project
+
+### Development Mode
+
+- Run Project in Development Watch Mode `yarn dev`
+- Create Build for Development Environment `yarn build-dev`
+- Serve Dev Build `yarn serve` before running this to make sure to create dev build using `yarn build-dev`
+  
+  
 ## Common Feature
 
 - Redux Toolkit: Integrated with Redux Toolkit for efficient state management.
@@ -22,13 +51,6 @@
 - Development Experience: Hot module replacement (HMR) for a smooth development experience.
 - CI/CD Integration: Example CI/CD pipeline configurations for automated testing and deployment.
 - Environment Configuration: Supports multiple environments with easy configuration.
-
-## Setup
-
-- Jest Setup
-  - [Getting Started](https://jestjs.io/docs/getting-started)
-  - [Delightful testing with Jest and TypeScript](https://kulshekhar.github.io/ts-jest/)
-  - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## Project Structure
 
