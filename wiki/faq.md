@@ -34,3 +34,6 @@
   - That is because the typescript eslint version is not supporting the eslint 9 version, and they have some breaking changes. You can check this thread for details. After the upgrade, we must update the typescript eslint version.
   - [ESLint v9 Support](https://github.com/typescript-eslint/typescript-eslint/issues/8211)
   - [Eslint 9 doesn't work with typescript?](https://www.reddit.com/r/typescript/comments/1cjbjis/eslint_9_doesnt_work_with_typescript/)
+
+- How do you update outdated yarn packages?
+  - `yarn upgrade-interactive`

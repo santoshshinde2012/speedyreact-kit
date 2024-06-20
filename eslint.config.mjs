@@ -1,25 +1,10 @@
 import eslint from "@eslint/js";
-import tseslint from "typescript-eslint";
 import prettierConfig from "eslint-config-prettier";
+import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
-  {
-    // config with just ignores is the replacement for `.eslintignore`
-    ignores: [
-      ".pnp.cjs",
-      ".yarn",
-      "**/.yarn/**",
-      ".node_modules",
-      "dist",
-      "**/dist/**",
-      "**/build/**",
-      "**/dist/**",
-      "coverage",
-      "docker",
-    ]
-  },
-
   {
     languageOptions: {
       globals: {
@@ -38,5 +23,27 @@ export default tseslint.config(
   ...tseslint.configs.strict,
 
   // stylistic: additional rules that enforce consistent styling without significantly catching bugs or changing logic.
-  ...tseslint.configs.stylistic
+  ...tseslint.configs.stylistic,
+
+  {
+    ignores: [
+      'node_modules',
+      '*.d.ts',
+      ".pnp.cjs",
+      ".yarn/*",
+      ".node_modules",
+      "dist/*",
+      "coverage",
+      "docker",
+    ]
+  },
+  {
+    plugins: {
+      "simple-import-sort": simpleImportSort,
+    },
+    rules: {
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error",
+    },
+  }
 );

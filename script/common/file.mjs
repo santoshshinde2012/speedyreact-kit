@@ -1,7 +1,7 @@
 import {
-  promises as fs,
   existsSync,
   mkdirSync,
+  promises as fs,
   readFileSync,
   writeFileSync,
 } from "fs";
@@ -78,4 +78,4 @@ function createDirectoryIfNotExist(directoryPath) {
   }
 }
 
-export { copyFolder, deleteFolder, updateIndexHtml, createDirectoryIfNotExist };
+export { copyFolder, createDirectoryIfNotExist, deleteFolder, updateIndexHtml };

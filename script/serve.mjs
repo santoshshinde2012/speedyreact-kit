@@ -1,6 +1,7 @@
 import esbuild from "esbuild";
+
+import { outdir, publicdir, sharedEsbuildConfig } from "./common/config.mjs";
 import { copyFolder } from "./common/file.mjs";
-import { sharedEsbuildConfig, outdir, publicdir } from "./common/config.mjs";
 
 const esbuildConfig = {
   ...sharedEsbuildConfig,

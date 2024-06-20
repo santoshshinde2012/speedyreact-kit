@@ -1,17 +1,18 @@
 import * as esbuild from "esbuild";
+
+import { analyze } from "./common/args.mjs";
 import {
-  updateIndexHtml,
-  deleteFolder,
-  copyFolder,
-  createDirectoryIfNotExist,
-} from "./common/file.mjs";
-import {
-  sharedEsbuildConfig,
+  analyzerdir,
   outdir,
   publicdir,
-  analyzerdir,
+  sharedEsbuildConfig,
 } from "./common/config.mjs";
-import { analyze } from "./common/args.mjs";
+import {
+  copyFolder,
+  createDirectoryIfNotExist,
+  deleteFolder,
+  updateIndexHtml,
+} from "./common/file.mjs";
 import { metaPlugin } from "./plugin/meta-plugin.mjs";
 
 const esbuildConfig = {
