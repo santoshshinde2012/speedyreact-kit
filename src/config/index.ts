@@ -1,2 +1,3 @@
-const env = process.env.API_KEY;
+const env = process.env.NODE_ENV;
+
 export { env };
