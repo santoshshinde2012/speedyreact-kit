@@ -1,6 +1,7 @@
-import { parse } from "dotenv";
 import { existsSync, promises as fs } from "fs";
 import path from "path";
+
+import { parse } from "dotenv";
 
 const envPlugin = (inputs = {}) => {
   const options = {

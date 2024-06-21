@@ -1,7 +1,7 @@
 import {
   existsSync,
-  mkdirSync,
   promises as fs,
+  mkdirSync,
   readFileSync,
   writeFileSync,
 } from "fs";
