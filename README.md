@@ -54,14 +54,48 @@
 
 ## Project Structure
 
-- `src`
-- `public`
-- `script`
-- `mock`
-- `package.json`
-- `types.d.ts`
-- `jest.config.ts`
-- `eslint.config.mjs`
+```
+├── eslint.config.mjs
+├── jest.config.ts
+├── mock
+│   ├── file.ts
+│   └── style.ts
+├── package.json
+├── prettierrc.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── script
+│   ├── build.mjs
+│   ├── common
+│   │   ├── args.mjs
+│   │   ├── config.mjs
+│   │   └── file.mjs
+│   ├── plugin
+│   │   ├── env-plugin.mjs
+│   │   └── meta-plugin.mjs
+│   └── serve.mjs
+├── setupTests.ts
+├── src
+│   ├── App.css
+│   ├── App.test.tsx
+│   ├── App.tsx
+│   ├── config
+│   │   └── index.ts
+│   ├── index.css
+│   ├── index.tsx
+│   └── logo.svg
+├── tsconfig.json
+├── types.d.ts
+├── wiki
+│   ├── faq.md
+│   └── jest-setup.md
+└── yarn.lock
+```
 
 ## Wiki
 
@@ -70,8 +104,9 @@
 ## Refrences
 
  - [A Comprehensive Guide to Setting Up ESLint, Jest, and Prettier in Node TypeScript](https://blog.santoshshinde.com/a-comprehensive-guide-to-setting-up-eslint-jest-and-prettier-in-node-typescript-b04d8e5673fd)
- - 
- 
+ - [Modern Testing Setup: Jest and React Testing Library for React TypeScript Projects](https://blog.santoshshinde.com/modern-testing-setup-jest-and-react-testing-library-for-react-typescript-projects-a534c651746f)
+
+
 <hr/>
 
 ### Connect with me on
