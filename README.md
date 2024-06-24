@@ -1,10 +1,23 @@
 # speedyreact-kit
 
 - The React Redux Esbuild Jest Starter is a modern, efficient boilerplate designed to kickstart your React projects with powerful tools and best practices. This template integrates React, Redux Toolkit, Esbuild, and Jest, ensuring optimal performance and a smooth development experience.
+  
+## Common Feature
 
-## Tools
-
-- [esbuild]
+- Redux Toolkit: Integrated with Redux Toolkit for efficient state management.
+- TypeScript: Fully typed with TypeScript for static typing and improved productivity.
+- Yarn and Yarn Berry: Uses Yarn and Yarn Berry for fast and reliable dependency management.
+- ESBuild: Utilizes ESBuild for fast and efficient application bundling.
+- Jest: Pre-configured with Jest for unit and integration testing.
+- ESLint: Configured with ESLint for consistent code quality and style.
+- Prettier: Integrated with Prettier for code formatting.
+- Husky: Uses Husky for Git hooks to enforce code quality before commits.
+- Project Structure: Organized project structure with clear separation of concerns.
+- Development Experience: Hot module replacement (HMR) for a smooth development experience.
+- CI/CD Integration: Example CI/CD pipeline configurations for automated testing and deployment.
+- Environment Configuration: Supports multiple environments with easy configuration.
+  
+## Core Packages 
   
 ## Setup
 
@@ -36,21 +49,6 @@
 - Create Build for Development Environment `yarn build-dev`
 - Serve Dev Build `yarn serve` before running this to make sure to create dev build using `yarn build-dev`
   
-  
-## Common Feature
-
-- Redux Toolkit: Integrated with Redux Toolkit for efficient state management.
-- TypeScript: Fully typed with TypeScript for static typing and improved productivity.
-- Yarn and Yarn Berry: Uses Yarn and Yarn Berry for fast and reliable dependency management.
-- ESBuild: Utilizes ESBuild for fast and efficient application bundling.
-- Jest: Pre-configured with Jest for unit and integration testing.
-- ESLint: Configured with ESLint for consistent code quality and style.
-- Prettier: Integrated with Prettier for code formatting.
-- Husky: Uses Husky for Git hooks to enforce code quality before commits.
-- Project Structure: Organized project structure with clear separation of concerns.
-- Development Experience: Hot module replacement (HMR) for a smooth development experience.
-- CI/CD Integration: Example CI/CD pipeline configurations for automated testing and deployment.
-- Environment Configuration: Supports multiple environments with easy configuration.
 
 ## Project Structure
 
