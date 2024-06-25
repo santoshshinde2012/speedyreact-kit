@@ -49,7 +49,10 @@
 - Create Build for Development Environment `yarn build-dev`
 - Serve Dev Build `yarn serve` before running this to make sure to create dev build using `yarn build-dev`
   
+## Testing
 
+- To run the test cases `yarn test`
+  
 ## Project Structure
 
 ```
