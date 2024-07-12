@@ -53,6 +53,7 @@ export default tseslint.config(
       import: importPlugin,
     },
     rules: {
+      "@typescript-eslint/no-invalid-void-type": "off",
       "sort-imports":
       [
           "error",
